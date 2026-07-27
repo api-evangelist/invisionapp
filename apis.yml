@@ -1,8 +1,31 @@
 aid: invisionapp
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/invisionapp.png
 name: InVisionApp
-description: InVisionApp is a company surfaced as a portfolio company of battery-ventures and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  InVision (InVisionApp, Inc.) was a digital product design collaboration
+  platform founded in 2011 by Clark Valberg and Ben Nadel. It built a suite of
+  tools for prototyping, design handoff, and real-time collaboration —
+  including interactive prototypes, Inspect/Specs for developer handoff, DSM
+  (Design System Manager), Boards, and the Freehand online whiteboard. At its
+  peak InVision was valued near two billion dollars and backed by Battery
+  Ventures, Accel, Tiger Global, and others, serving product design teams as a
+  challenger to Adobe. As Figma surged, InVision's business declined: it sold
+  the Freehand whiteboard product to Miro in 2023, and wound down all remaining
+  services on December 31, 2024, after which customer content was permanently
+  deleted. The invisionapp.com domain now redirects to Miro. InVision
+  historically exposed a public REST API with OAuth and webhooks for its design
+  platform, but that developer surface has been retired along with the product.
 url: https://raw.githubusercontent.com/api-evangelist/invisionapp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,14 +33,35 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-status-note: >-
+  Services wound down 2024-12-31; Freehand acquired by Miro (2023);
+  invisionapp.com redirects to miro.com.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Design
+- Product Design
+- Prototyping
+- Design Collaboration
+- Design Systems
+- Developer Tools
+- Defunct
 apis: []
+common:
+- type: DomainSecurity
+  url: security/invisionapp-domain-security.yml
+- type: Website
+  url: https://www.invisionapp.com
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
