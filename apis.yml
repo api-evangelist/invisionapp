@@ -37,7 +37,7 @@ x-status: defunct
 x-status-note: >-
   Services wound down 2024-12-31; Freehand acquired by Miro (2023);
   invisionapp.com redirects to miro.com.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
